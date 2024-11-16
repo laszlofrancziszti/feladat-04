@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximális Párosítás egy Fában - Feladat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .example {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .example pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Maximális Párosítás egy Fában - Feladat</h1>
+
+        <h2>Leírás:</h2>
+        <p>Adott egy fának nevezett gráf, amely <code>n</code> csúcsból és <code>n-1</code> élből áll. Minden él két csúcsot köt össze. A feladat az, hogy megtaláljuk a fa maximális párosítását, vagyis az élek egy olyan halmazát, amelyben minden csúcs legfeljebb egy élhez tartozik. A cél, hogy meghatározzuk, hány él tartozik a maximális párosításhoz.</p>
+
+        <p>A párosításban lévő élek száma a maximális, ha nincs olyan csúcs, amely több mint egy élben szerepelne.</p>
+
+        <h2>Bemenet:</h2>
+        <p>Az első sor egy egész számot tartalmaz, <code>n</code>-t, amely a csúcsok számát jelzi.</p>
+        <p>A következő <code>n-1</code> sor mindegyike két egész számot tartalmaz, <code>a</code> és <code>b</code>, amelyek azt jelentik, hogy van egy él a <code>a</code> és <code>b</code> csúcs között.</p>
+
+        <h2>Kimenet:</h2>
+        <p>Egy egész számot kell kiírni, amely a maximális párosításban szereplő élek számát jelzi.</p>
+
+        <h2>Korlátok:</h2>
+        <ul>
+            <li><code>1 ≤ n ≤ 2 * 10^5</code></li>
+            <li><code>1 ≤ a, b ≤ n</code></li>
+        </ul>
+
+        <h2>Példa:</h2>
+
+        <div class="example">
+            <h3>Bemenet 1:</h3>
+            <pre>5
+1 2
+1 3
+3 4
+3 5</pre>
+            <h3>Kimenet 1:</h3>
+            <pre>2</pre>
+
+            <h3>Bemenet 2:</h3>
+            <pre>3
+1 2
+2 3</pre>
+            <h3>Kimenet 2:</h3>
+            <pre>1</pre>
+        </div>
+
+        <h2>Magyarázat:</h2>
+        <p>- Az első példa egy fát reprezentál, amely a következő él struktúrával rendelkezik: <code>1-2</code>, <code>1-3</code>, <code>3-4</code>, <code>3-5</code>. A maximális párosítás két élt tartalmazhat: (<code>1,2</code>) és (<code>3,4</code>) vagy (<code>3,5</code>).</p>
+
+        <p>- A második példa egy egyszerű lánc, ahol a maximális párosítás egy élből áll: (<code>1,2</code>) vagy (<code>2,3</code>).</p>
+
+        <h2>Feladat megoldása:</h2>
+        <p>A megoldás feladata, hogy a fa maximális párosítását meghatározza a bemeneti él kapcsolatok alapján.</p>
+
+        <div class="footer">
+            <p>Feladat forrása: <a href="https://example.com" target="_blank">example.com</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
